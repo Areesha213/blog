@@ -29,7 +29,7 @@ const connectDB=async()=>{
 dotenv.config()
 app.use(express.json())
 app.use("/images",express.static(path.join(__dirname,"/images")))
-app.use(cors({origin:["https://blog-frontend-ivory-ten.vercel.app/"],
+app.use(cors({origin:["https://blog-frontend-ivory-ten.vercel.app"],
               methods:["POST", "GET"],
               credentials:true}))
 app.use(cookieParser())
